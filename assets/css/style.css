@@ -123,6 +123,7 @@
     font-size: clamp(2rem, 3vw, 6rem);
     margin: 0;
     padding-bottom: 2rem;
+    font-weight:normal;
     
   }
 
