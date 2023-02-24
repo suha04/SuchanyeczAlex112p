@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'MiddleAgesDeco';
+    src: url('../fonts/MiddleAgesDeco.ttf');
+}
+
+@font-face {
+    font-family: 'MiddleAges';
+    src: url('../fonts/MiddleAges.ttf');
+}
+
+@font-face {
+    font-family: 'Tangerine';
+    src: url('../fonts/Tangerine.ttf');
+}
+
+@font-face {
+    font-family: 'PhotographSignature';
+    src: url('../fonts/PhotographSignature.ttf');
+}
+
+@font-face {
+    font-family: 'SaintCarell';
+    src: url('../fonts/SaintCarell.otf');
+}
+
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url('../fonts/MedievalSharp.ttf');
+}
+
+@font-face {
+    font-family: 'Xenippa';
+    src: url('../fonts/Xenippa.ttf');
+}
+
+@font-face {
+    font-family: 'GoudyInitialen';
+    src: url('../fonts/GoudyInitialen.ttf');
+}
+
+@font-face {
+    font-family: 'JHMHolyBible';
+    src: url('../fonts/JHMHolyBible.ttf');
+}

@@ -1,0 +1,372 @@
+  html
+  {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    background-color: beige;
+  }
+
+  /* IDÉZET */
+  #idezetkeret
+  {
+    margin: auto;
+    width: 50vw;
+    padding: 8rem;
+  }
+
+  #idezet
+  {
+    font-family: 'Tangerine';
+    text-align: center;
+    font-size: 5rem;
+    margin: 0;
+    animation: fadein;
+    animation-duration: 3s;
+  }
+
+  #hunyadi
+  {
+    margin: 0;
+    float: right;
+    font-family: 'PhotographSignature';
+    font-size: 2rem;
+    font-style: italic;
+    animation: fadein;
+    animation-duration: 3s;
+  }
+
+  header
+  {
+    width: auto;
+    height: auto;
+    background-image:
+    linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8) 70%),
+    url(../img/background.jpg);
+    background-blend-mode:hard-light;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: cover;
+    color: white;
+  }  
+
+
+  /*NAVBAR ÉS ELEMEI*/
+  
+  nav {
+    height: auto;
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    position: sticky;
+    top: 0px;
+  }
+  
+  nav > .nav-header {
+    display: inline;
+  }
+  
+  nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'MiddleAgesDeco';
+    padding: 10px 10px 10px 20px;
+  }
+  
+  nav > .nav-btn {
+    display: none;
+  }
+  
+  nav > .nav-links {
+    display: inline;
+    float: right;
+    padding-top: 20px;
+  }
+  
+  nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 20px 13px 20px;
+    text-decoration: none;
+    color: #efefef;
+    font-family: 'Xenippa';
+    font-size:1.5rem;
+  }
+  
+  nav > .nav-links > a:hover {
+    background-color: rgba(82, 82, 82, 0.3);
+    border-radius: 10%;
+  }
+  
+  nav > #nav-check {
+    display: none;
+  }
+
+  /*MAIN*/
+
+  .container{
+    display: flex;
+    width: auto;
+    height: 100%;
+    background-image: url('../img/papir.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20vh 5vw 0vh 5vw;
+    border-bottom: 2px solid black;
+  }
+
+  .sectioncim
+  {
+    font-family: 'MiddleAgesDeco';
+    font-size: clamp(2rem, 3vw, 6rem);
+    margin: 0;
+    padding-bottom: 2rem;
+    
+  }
+
+  .section
+  {
+    color: white;
+    margin: 0;
+    width: 50%;
+    height: 100vh;
+  }
+
+  .balkep
+  {
+    margin-right: 100px;
+  }
+
+  .jobbkep
+  {
+    margin-left: 100px;
+  }
+
+  .szoveg
+  {
+    
+    margin: 0;
+    text-align: justify;
+    font-family: 'JHMHolyBible';
+    font-size: clamp(0.5rem, 1vw, 2rem);
+  }
+
+ 
+
+  .szoveg::first-letter
+  {
+    font-family: 'GoudyInitialen';
+    font-size: 5rem;
+    float: left;
+    padding: 1px;
+  }
+
+  .imgcontainer
+  {
+    width: 100%;
+    height: 100%;
+  }
+
+  .sectionkep
+  {
+    width: 30vw;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* TELEFON FELBONTÁS*/
+
+  @media (max-width:960px) {
+
+    #idezetkeret
+  {
+    width: auto;
+    padding: 4rem;
+  }
+
+  #idezet
+  {
+    font-family: 'Tangerine';
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    animation: none;
+  }
+
+  #hunyadi
+  {
+    animation: none;
+  }
+
+
+
+
+
+
+
+
+
+  /*TELEFON NAV*/
+
+    nav > .nav-header > .nav-title
+    {
+        font-size: 2.5rem;
+    }
+
+
+    nav > .nav-btn {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 31%;
+      float: right;
+      padding-right: 10px;
+    }
+    nav > .nav-btn > label {
+      display: inline-block;
+      width: auto;
+      height: auto;
+      box-sizing: border-box;
+      
+      
+    }
+    nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #eee;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      nav > #nav-check:not(:checked) ~ .nav-btn > label > span:nth-of-type(1) {
+        transform: translateY(0px) rotate(0deg);
+      }
+      
+      nav > #nav-check:not(:checked) ~ .nav-btn > label > span:nth-of-type(2) {
+        transform: translateY(0px) rotate(0deg);
+      }
+      
+      nav > #nav-check:not(:checked) ~ .nav-btn > label > span:nth-of-type(3) {
+        transform: translateY(0px) rotate(0deg);
+      }
+      
+      nav > #nav-check:checked ~ .nav-btn > label > span:nth-of-type(1) {
+        transform: translateY(8px) rotate(45deg);
+        
+      }
+      
+      nav > #nav-check:checked ~ .nav-btn > label > span:nth-of-type(2) {
+        display: none; 
+      }
+      
+      nav > #nav-check:checked ~ .nav-btn > label > span:nth-of-type(3) {
+        transform: translateY(0px) rotate(-45deg);
+      }
+    nav > .nav-links {
+      display: block;
+      width: 100%;
+      background-color: #1a1a1a;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+      padding-top: 0;
+    }
+    nav > .nav-links > a {
+      display: inline-block;
+    }
+
+    nav > .nav-links > a:hover
+    {
+        border-radius: 0%;
+    }
+
+    nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    nav > #nav-check:checked ~ .nav-links {
+      height: auto;
+      overflow-y: auto;
+    }
+
+
+    /*TELEFON MAIN*/
+
+    .container{
+        display: block;
+        width: auto;
+        height: auto;
+        background-color: gray;
+        padding: 6vh 12vw 12vh 12vw;
+      }
+    
+      .sectioncim
+      {
+        font-family: 'MiddleAgesDeco';
+        font-size: clamp(2rem, 3vw, 6rem);
+        margin-top: 30vh;
+      }
+    
+      .section
+      {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+      }
+    
+      .szoveg
+      {
+        margin: 0;
+        text-align: justify;
+        font-size: 1rem;
+    
+        
+      }
+
+      .szoveg::first-letter
+      {
+        font-family: 'GoudyInitialen';
+        font-size: 4rem;
+      }
+
+      .sectionkep
+      {
+       display: none;
+      }
+    
+
+  }
+  
+  
+
+
+  /* ANIMÁCIÓK */
+
+  @keyframes fadein {
+    from { opacity: 0 }
+    to { opacity: 100%}
+}
