@@ -188,7 +188,7 @@
   footer
   {
     width: auto;
-    height: 20vh;
+    height: 10vh;
     margin: auto;
     padding: 10px;
     background-color: rgb(15, 15, 15);
@@ -198,7 +198,7 @@
 
   #lablec
   {
-    padding-top: 10vh;
+	transform: translateY(50%);
     text-align: center;
     margin: auto;
     font-size: 3vh;
