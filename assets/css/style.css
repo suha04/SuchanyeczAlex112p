@@ -89,7 +89,7 @@
   nav > .nav-links {
     display: inline;
     float: right;
-    margin: 1%;
+    padding: 1%;
   }
   
   nav > .nav-links > a {
