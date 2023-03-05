@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Várnai csata - Kvízjáték</title>
+    <link rel="icon" href="assets/img/cimer.png">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/Kvizformaz.css">
+    <script src="assets/js/feladatCfeldolgoz.js"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <nav>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Váradi csata
+          </div>
+        </div>
+        
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="feladatC.html">Vissza a Főoldalra</a>
+        </div>
+    </nav>
+    <main>
+      
+      <form id="kviz">
+        <div id="kvizkeret">
+          <h1 id="cim">A VÁRNAI KVÍZ</h1>
+        <p>1. Mely országokat és városokat támadták rendszeresen a törökök a 1400-as évek végétől?</p>
+        
+        <div><input type="radio" id="answer1a" name="answer1" value="a" size="10"><label for="answer1a">Bulgáriát, Szerbiát, Albániát</label></div>
+        <div><input type="radio" id="answer1b" name="answer1" value="b"><label for="answer1b">Magyarországot és Lengyelországot</label></div>
+        <div><input type="radio" id="answer1c" name="answer1" value="c"><label for="answer1c">Albániát és Havasalföldet</label></div>
+        
+        <p>2. Milyen béke jelentette a hadjárat véget, amelyet I. Ulászló magyar és lengyel király vezetett a törökök ellen?</p>
+        
+        <div><input type="radio" id="answer2a" name="answer2" value="a"><label for="answer2a">várnai béke</label></div>
+        <div><input type="radio" id="answer2b" name="answer2" value="b"><label for="answer2b">berlini béke</label></div>
+        <div><input type="radio" id="answer2c" name="answer2" value="c"><label for="answer2c">drinápolyi béke</label></div>
+        
+        <p>3. Kinek a csapatait helyezte át II. Murád szultán a Balkánra, mielőtt Ulászló újabb hadjáratot indított volna az Oszmán Birodalom ellen?</p>
+        
+        <div><input type="radio" id="answer3a" name="answer3" value="a"><label for="answer3a">török hadsereg fő erőit</label></div>
+        <div><input type="radio" id="answer3b" name="answer3" value="b"><label for="answer3b">magyar hadsereg fő erőit</label></div>
+        <div><input type="radio" id="answer3c" name="answer3" value="c"><label for="answer3c">lengyel hadsereg fő erőit</label></div>
+        
+      </div>
+        <button id="submit" onclick="ellenorizz()">Leadás</button>
+    </form>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>

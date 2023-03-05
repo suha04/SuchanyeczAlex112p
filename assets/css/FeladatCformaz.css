@@ -135,6 +135,18 @@
     
   }
 
+
+  #kviz
+  {
+    font-size: 0.8vw;
+  }
+
+  #kviz input[type=radio] {
+    border: 0px;
+    width: auto;
+    height: 2vh;
+}
+
   .section
   {
     color: white;
@@ -183,31 +195,43 @@
     width: 30vw;
   }
 
+  #hunyadikep
+  {
+    width: 50vw;
+  }
+
   /* FOOTER */
 
   footer
   {
     width: auto;
-    height: 10vh;
     margin: auto;
-    padding: 10px;
+    height: fit-content;
     background-color: rgb(15, 15, 15);
     color: white;
     font-family: 'JHMHolyBible';
   }
 
-  #lablec
+  #keszito
   {
-	transform: translateY(50%);
     text-align: center;
-    margin: auto;
-    font-size: 3vh;
-    
+    font-size: 1vw;
+    padding: 10px;
   }
 
+  #kviz
+  {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    text-transform:uppercase;
+  }
 
-
-
+  #kviz a
+  {
+    text-decoration: none;
+    color: red;
+  }
 
 
 
