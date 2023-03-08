@@ -81,6 +81,12 @@
     font-family: 'MiddleAgesDeco';
     padding: 10px 10px 10px 20px;
   }
+
+  .nav-title a
+  {
+    text-decoration: none;
+    color: white;
+  }
   
   nav > .nav-btn {
     display: none;
