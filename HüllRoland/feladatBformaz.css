@@ -1,0 +1,414 @@
+/* Az összes HTML elemhez alkalmazva */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Az oldal teljes háttere */
+body {
+    background: #f7f7f7;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+
+/* A cím */
+header h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* A horizontális vonalak */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* A fő tartalom konténer */
+#body {
+    margin: 20px;
+}
+
+/* Az információs doboz */
+#tudnivalok {
+    background: #993232;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Az információs doboz fejléce */
+#tudnivalok h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Az információs doboz tartalma */
+#tudnivalok ul {
+    font-size: 18px;
+    list-style: none;
+    margin-left: 20px;
+}
+
+/* Az információs dobozban lévő kép */
+#zaszlo {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+/* Az információs dobozban lévő kép leírása */
+#zaszlo figcaption {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* A részletesebb információk doboza */
+#tudnivalokreszletes {
+    background: #ec9d9d;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* A részletesebb információk doboza fejléce */
+#tudnivalokreszletes h2 {
+    background-color: rgb(209, 182, 182);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* A részletesebb információk doboza tartalma */
+#tudnivalokreszletes ul {
+    font-size: 18px;
+    list-style: none;
+    margin-left: 20px;
+    background-color: rgb(209, 182, 182);
+}
+
+/* A táblázat az információk dobozban */
+#tudnivalokreszletes table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: rgb(56, 55, 49);
+    
+}
+
+.no-overflow {
+    background-color: rgb(204, 188, 164); overflow: hidden; }
+.debugRED { background: red; }
+.debugBLU { background: blue; }
+
+html
+{
+    --font-folor: white;
+    --footer-font-color: #bd6464;
+    --background-color: #000000d0;
+    --scrollbar-scroller-color: #fa07074f;
+    --hr-color: #ebd405be;
+    --hr-color-hf: #aa3931af;
+    color: var(--font-folor);
+    background: black;
+    background-image: url(./mohacsicsata.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr
+{
+    border: 1px solid var(--hr-color);
+    width: 85%;
+}
+
+header
+{
+    margin: 20px 30px;
+    margin-bottom: 0;
+}
+
+header h1
+{
+    margin: 0 0 10px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+header hr
+{
+    border-color: var(--hr-color-hf);
+    width: 95%;
+}
+
+#ctnr
+{
+    padding-top: 20px;
+    width: 80%;
+    height: 80%;
+    background: var(--background-color);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-color: var(--scrollbar-scroller-color) #00000000;
+}
+
+#body
+{
+    margin: 0;
+    padding: 0;
+}
+
+#tudnivalok 
+{
+    margin: 20px 30px;
+    margin-top: 0;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(209, 182, 182);
+}
+
+#tudnivalok span 
+{ margin: 0 30px; }
+
+#tudnivalok h2
+ { margin-bottom: 0; }
+ 
+#tudnivalok ul 
+{ margin-top: 8px;}
+
+#tudnivalok ul li
+{ margin-bottom: 5px; }
+
+#tudnivalok ul li ul
+{
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+#logo
+{ 
+    width: 600px;
+    height: 400px;
+}
+
+#logo
+{
+    text-align: center;
+    font-size: 12px;
+}
+
+#tudnivalokreszletes
+{
+    margin: 20px 30px;
+    margin-top: 0;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    background-color: rgb(209, 182, 182);
+}
+
+#tudnivalokreszletes span
+{ margin: 0 30px; 
+    background-color: rgb(209, 182, 182);}
+
+#tudnivalokreszletes h2 
+{ margin-bottom: 0;
+    background-color: rgb(209, 182, 182); }
+
+#tudnivalokreszletes ul
+ { margin-top: 8px;
+    background-color: rgb(209, 182, 182);}
+
+#tudnivalokreszletes ul li 
+{ margin-bottom: 5px; 
+    background-color: rgb(209, 182, 182);}
+
+
+#tudnivalokreszletes ul li ul
+{
+    list-style-type: none;
+    padding: 0 0 15px 0;
+}
+
+#tudnivalokreszletes h3 { margin-bottom: 0;}
+
+footer hr
+{
+    border-color: var(--hr-color-hf);
+    width: 95%;
+}
+
+footer p
+{
+    text-align: center;
+    color: var(--footer-font-color);
+} 
+
+table
+{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(180, 164, 75);
+  
+}
+
+/* Az összes HTML elemhez alkalmazva */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Az oldal teljes háttere */
+body {
+    background: #f7f7f7;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+/* A cím */
+header h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* A horizontális vonalak */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* A fő tartalom konténer */
+#body {
+    margin: 20px;
+}
+
+/* Az információs doboz */
+#tudnivalok {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Az információs doboz fejléce */
+#tudnivalok h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Az információs doboz tartalma */
+#tudnivalok ul {
+    font-size: 18px;
+    list-style: none;
+    margin-left: 20px;
+}
+
+/* Az információs dobozban lévő kép */
+#zaszlo {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+/* Az információs dobozban lévő kép leírása */
+#zaszlo figcaption {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* A részletesebb információk doboza */
+#tudnivalokreszletes {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* A részletesebb információk doboza fejléce */
+#tudnivalokreszletes h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* A részletesebb információk doboza tartalma */
+#tudnivalokreszletes ul {
+    font-size: 18px;
+    list-style: none;
+    margin-left: 20px;
+}
+
+/* A táblázat az információk dobozban */
+#tudnivalokreszletes table {
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+nav {
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    overflow: hidden;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    color: #755050;
+    text-decoration: none;
+    background-color: rgb(245, 228, 207);
+  }
+  
+  nav a:hover {
+    background: #ccc;
+    background-color: rgb(245, 228, 207);
+  }
+
+  nav {
+    background-color: rgb(199, 194, 149);
+  }
+
+  #balranyil, #jobbranyil {
+    width: 50px;
+    height: 50px;
+  }
+  
